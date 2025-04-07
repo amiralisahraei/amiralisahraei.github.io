@@ -346,19 +346,19 @@ a:hover {
 
 .timeline {
     position: relative;
-    padding-left: 2rem;
+    padding-left: 4rem; /* Increase left padding */
+    margin-left: 1rem; /* Add margin from the left */
 }
 
 .timeline:before {
     content: '';
     position: absolute;
-    left: 7px;
+    left: 24px; /* Adjust line position */
     top: 0;
     height: 100%;
     width: 2px;
     background: var(--secondary);
 }
-
 .timeline-item {
     position: relative;
     margin-bottom: 2rem;
@@ -370,21 +370,25 @@ a:hover {
 
 .timeline-date {
     position: absolute;
-    left: -2rem;
-    top: 0;
+    left: -3.5rem; /* Move date further left */
+    top: 1.2rem; /* Move date down more */
     background: var(--secondary);
     color: var(--white);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .timeline-content {
     background: rgba(255, 255, 255, 0.05);
-    padding: 1.5rem;
+    padding: 2.5rem 1.5rem 1.5rem; /* Increase top padding */
+    padding-left: 2rem;
     border-radius: 10px;
     transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem; /* Add top margin */
 }
 
 .timeline-content:hover {
@@ -713,28 +717,51 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-    .about-container,
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-image {
+        display: none; /* Hide the profile picture */
+    }
+
+    .about-content {
+        width: 100%; /* Make content full width */
+    }
+
+    .expertise-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid for better responsive layout */
+    }
+
     .contact-container {
         grid-template-columns: 1fr;
     }
     
+    .resume-container {
+        padding: 2rem 1.5rem; /* Reduce padding on larger tablets */
+    }
+    
     .resume-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
     .hero {
         flex-direction: column;
         padding-top: 6rem;
         text-align: center;
+        gap: 3rem; /* Add spacing between hero content and image */
     }
     
     .hero-buttons {
         justify-content: center;
+        margin-bottom: 2rem; /* Add bottom margin to buttons */
     }
     
-    .about-image {
-        display: flex;
-        justify-content: center;
+    .hero-image {
+        margin-top: 2rem; /* Add top margin to image container */
     }
     
     .contact-info {
@@ -779,6 +806,52 @@ a:hover {
     
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero {
+        gap: 4rem; /* Increase gap for smaller screens */
+    }
+    
+    .profile-img {
+        max-width: 300px; /* Make image slightly smaller on mobile */
+    }
+    
+    .hero-buttons {
+        margin-bottom: 1rem; /* Adjust button margin for mobile */
+    }
+
+    .resume-section {
+        padding: 6rem 5% 3rem; /* Reduce outer section padding */
+    }
+    
+    .resume-container {
+        padding: 1.5rem 1rem; /* Reduce container padding */
+        margin: 0 auto;
+        max-width: 95%; /* Prevent content from touching edges */
+    }
+
+    .timeline {
+        padding-left: 3.5rem; /* Adjust padding for mobile */
+    }
+    
+    .timeline:before {
+        left: 12px; /* Adjust line position for mobile */
+    }
+    
+    .timeline-content {
+        padding: 2rem 1.2rem 1.2rem; /* Adjust padding for mobile */
+        padding-left: 1.5rem;
+        margin-left: 0.5rem;
+        margin-top: 0.8rem; /* Increase top margin for mobile */
+    }
+    
+    .timeline-date {
+        left: -3rem;
+        top: 0.2rem; /* Adjust date position */
+    }
+    
+    .resume-block {
+        margin-bottom: 2rem; /* Add more space between blocks */
     }
 }
 
@@ -1044,3 +1117,4 @@ a:hover {
 #social-links-container {
     display: none;
 }
+

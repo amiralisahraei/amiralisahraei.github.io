@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Amirali Sahraei</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <nav class="glass-nav">
+        <div class="nav-brand">A.S.</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p id="availability"></p>
+                
+                <div class="info-items-container">
+                    <!-- Email -->
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="" id="email-link"></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Phone -->
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="" id="phone-link"></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div id="social-links-container">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Locations Section -->
+                <div class="location-info">
+                    <h4>Locations & Availability</h4>
+                    <div id="locations-container">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                    <div id="working-hours-container">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/dynamic-loader.js"></script>
+
+</body>
+</html>

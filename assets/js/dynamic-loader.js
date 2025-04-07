@@ -65,7 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="project-tech">
               ${project.technologies.map((tech) => `<span>${tech}</span>`).join('')}
             </div>
-            <a href="#" class="btn-project">View Details <i class="fas fa-arrow-right"></i></a>
+            <a href="${project.url || '#'}" 
+               class="btn-project" 
+               target="${project.url ? '_blank' : '_self'}"
+               ${!project.url ? 'disabled' : ''}>
+              View Details <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       `);
@@ -106,14 +111,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (data.skills) {
-      populateList('.skills-container', data.skills, (skill) => `
-        <div class="skill-item">
-          <h4>${skill.name}</h4>
-          <div class="skill-bar">
-            <div class="skill-level" data-level="${skill.level}%"></div>
-          </div>
-        </div>
-      `);
+      const skillsContainer = document.querySelector('.skills-container');
+      if (skillsContainer) {
+        let skillsHTML = '';
+        for (const [category, skills] of Object.entries(data.skills)) {
+          skillsHTML += `
+            <div class="skills-category">
+              <h4>${category}</h4>
+              <div class="skills-list">
+                ${skills.map(skill => `
+                  <div class="skill-item">
+                    <span>${skill.name}</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `;
+        }
+        skillsContainer.innerHTML = skillsHTML;
+      }
     }
 
     if (data.achievements) {
@@ -152,27 +168,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Generate social links
-    const socialLinksContainer = document.getElementById('social-links-container');
+    const socialLinksContainer = document.getElementById('social-links');
     if (socialLinksContainer && contactInfo.social) {
         const socialIcons = {
             linkedin: 'fab fa-linkedin',
-            github: 'fab fa-github',
-            twitter: 'fab fa-twitter',
-            scholar: 'fas fa-graduation-cap'
+            github: 'fab fa-github'
         };
 
         Object.entries(contactInfo.social).forEach(([platform, url]) => {
-            if (url) {
-                const div = document.createElement('div');
-                div.className = 'info-item';
-                div.innerHTML = `
-                    <i class="${socialIcons[platform]}"></i>
-                    <div class="info-content">
-                        <h4>${platform.charAt(0).toUpperCase() + platform.slice(1)}</h4>
-                        <a href="${url}" target="_blank">${url.replace('https://', '')}</a>
-                    </div>
-                `;
-                socialLinksContainer.appendChild(div);
+            if (url && socialIcons[platform]) {
+                const link = document.createElement('a');
+                link.href = url;
+                link.target = "_blank";
+                link.setAttribute('aria-label', platform.charAt(0).toUpperCase() + platform.slice(1));
+                link.innerHTML = `<i class="${socialIcons[platform]}"></i>`;
+                socialLinksContainer.appendChild(link);
             }
         });
     }

@@ -2,7 +2,10 @@ const data = {
   profile: {
     name: "Amirali Sahraei",
     title: "Machine Learning Engineer",
-    bio: "Machine Learning Engineer with hands-on experience in developing and deploying AI solutions, including deep learning models, large language models (LLMs), and computer vision applications."
+    bio: `Machine Learning Engineer with expertise in developing and deploying AI solutions,
+    including deep learning, LLMs, and computer vision. Proficient in fine-tuning transformers,
+    MLOps, and cloud-based model deployment. Strong skills in Python, PyTorch, LangChain, and AWS. 
+    Passionate about leveraging AI to solve real-world problems and drive business impact.`
   },
   about: {
     image: "assets/images/profile.png",
@@ -56,51 +59,95 @@ const data = {
       title: "LLM Fine-Tuning with LoRA for GPT-2",
       description: "Implemented parameter-efficient fine-tuning using Low-Rank Adaptation for GPT-2 models, achieving improved performance with reduced computational resources.",
       technologies: ["PyTorch", "HuggingFace", "LoRA"],
-      icon: "robot"
+      icon: "robot",
+      url: "https://github.com/amiralisahraei/gpt2-qa-finetuning"
     },
     {
       id: 2,
       title: "Agents-Based RAG System with LLM",
       description: "Developed a Retrieval-Augmented Generation system integrating Tavily Search API to enhance LLM responses with real-time information retrieval.",
       technologies: ["LangChain", "LLMs", "Tavily"],
-      icon: "search"
+      icon: "search",
+      url: "https://github.com/amiralisahraei/agent-rag-llm"
     },
     {
       id: 3,
       title: "Lung CT Image Classification",
       description: "FastAPI-based application for classifying lung CT scans using convolutional neural networks, achieving 94% accuracy on test dataset.",
       technologies: ["FastAPI", "CNN", "Medical Imaging"],
-      icon: "lungs"
+      icon: "lungs",
+      url: "https://github.com/amiralisahraei/lung-cancer-classification"
     },
     {
       id: 4,
       title: "Gmail ETL Categorization",
       description: "Automated email categorization system using NLP techniques to classify and route incoming emails to appropriate departments.",
       technologies: ["NLP", "ETL", "Python"],
-      icon: "envelope"
+      icon: "envelope",
+      url: "https://github.com/amiralisahraei/gmail-llm-categorization"
     },
     {
       id: 5,
       title: "Object Detection (YOLO_V8)",
       description: "Real-time object detection system using YOLOv8 for identifying and classifying objects in images and video streams.",
       technologies: ["YOLOv8", "Computer Vision", "OpenCV"],
-      icon: "eye"
+      icon: "eye",
+      url: "https://github.com/amiralisahraei/vision/tree/master/YOLO_V8"
     },
     {
       id: 6,
       title: "Image Stitching & Registration",
       description: "Panoramic image stitching and medical image registration system using feature detection and homography estimation.",
       technologies: ["OpenCV", "Image Processing", "Computer Vision"],
-      icon: "image"
+      icon: "image",
+      url: "https://github.com/amiralisahraei/opencv"
     }
   ],
-  skills: [
-    { name: "PyTorch", level: 95 },
-    { name: "Python", level: 90 },
-    { name: "TensorFlow", level: 85 },
-    { name: "AWS", level: 85 },
-    { name: "Solidity", level: 80 }
-  ],
+  skills: {
+    "Machine Learning & Deep Learning": [
+      { name: "PyTorch", level: 95 },
+      { name: "TensorFlow", level: 85 },
+      { name: "Keras", level: 85 },
+      { name: "Scikit-Learn", level: 90 },
+      { name: "OpenCV", level: 85 }
+    ],
+    "NLP & LLMs": [
+      { name: "LangChain", level: 90 },
+      { name: "Hugging Face", level: 85 },
+      { name: "GPT Models", level: 85 },
+      { name: "Transformers", level: 85 },
+      { name: "Fine-tuning LLMs", level: 90 }
+    ],
+    "MLOps & Model Deployment": [
+      { name: "Docker", level: 85 },
+      { name: "Apache Airflow", level: 80 },
+      { name: "AWS", level: 85 },
+      { name: "FastAPI", level: 90 },
+      { name: "Flask", level: 85 }
+    ],
+    "CI/CD": [
+      { name: "Git", level: 90 },
+      { name: "Jenkins", level: 80 },
+      { name: "GitHub Actions", level: 85 },
+      { name: "Automated Pipelines", level: 85 },
+      { name: "Docker", level: 85 }
+    ],
+    "Data Science & Analytics": [
+      { name: "Pandas", level: 95 },
+      { name: "NumPy", level: 95 },
+      { name: "Matplotlib", level: 90 },
+      { name: "Seaborn", level: 90 },
+      { name: "SQL", level: 85 },
+      { name: "MongoDB", level: 80 }
+    ],
+    "Software Development & Tools": [
+      { name: "Python", level: 95 },
+      { name: "Jupyter Notebook", level: 90 },
+      { name: "Ubuntu", level: 85 },
+      { name: "Google Colab", level: 90 },
+      { name: "GitHub", level: 90 }
+    ]
+  },
   achievements: [
     {
       title: "Top 10% in Kaggle Competition",
@@ -113,14 +160,12 @@ const data = {
     "Machine Learning Specialization - DeepLearning.AI"
   ],
   contact: {
-    email: "amirali.sahraei@example.com",
+    email: "a.sahraei98@gmail.com",
     phone: "+98 123 456 7890",
     availability: "Currently available for new opportunities",
     social: {
-      linkedin: "https://linkedin.com/in/amiralisahraei",
+      linkedin: "https://www.linkedin.com/in/amirali-sahraei98",
       github: "https://github.com/amiralisahraei",
-      twitter: "https://twitter.com/amiralisahraei",
-      scholar: "https://scholar.google.com/citations?user=YOUR_PROFILE"
     },
     locations: [
       {

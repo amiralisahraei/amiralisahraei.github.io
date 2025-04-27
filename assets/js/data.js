@@ -55,6 +55,14 @@ const data = {
   ],
   projects: [
     {
+      id: 4,
+      title: "Gmail Categorization App Powered by LLMs",
+      description: "A Django-based web application that fetches, analyzes, and intelligently categorizes Gmail messages using Large Language Models (LLMs) for deeper contextual sentiment understanding. This AI-driven app offers a modern interface to explore and filter your inbox based on nuanced sentiment categories.",
+      technologies: ["Django", "LLMS"],
+      icon: "envelope",
+      url: "https://github.com/amiralisahraei/django-llm-mail"
+    },
+    {
       id: 1,
       title: "LLM Fine-Tuning with LoRA for GPT-2",
       description: "Implemented parameter-efficient fine-tuning using Low-Rank Adaptation for GPT-2 models, achieving improved performance with reduced computational resources.",
@@ -77,14 +85,6 @@ const data = {
       technologies: ["FastAPI", "CNN", "Medical Imaging"],
       icon: "lungs",
       url: "https://github.com/amiralisahraei/lung-cancer-classification"
-    },
-    {
-      id: 4,
-      title: "Gmail ETL Categorization",
-      description: "Automated email categorization system using NLP techniques to classify and route incoming emails to appropriate departments.",
-      technologies: ["NLP", "ETL", "Python"],
-      icon: "envelope",
-      url: "https://github.com/amiralisahraei/gmail-llm-categorization"
     },
     {
       id: 5,

@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="timeline-content">
             <h4>${edu.degree}</h4>
             <p>${edu.institution} | GPA: ${edu.gpa}</p>
+            <p>${edu.description}</p>
           </div>
         </div>
       `);
@@ -102,9 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="timeline-content">
             <h4>${exp.title}</h4>
             <p>${exp.company}</p>
-            <ul>
-              ${exp.responsibilities.map((resp) => `<li>${resp}</li>`).join('')}
-            </ul>
+            <p>${exp.responsibilities}</p>
           </div>
         </div>
       `);
@@ -121,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <div class="skills-list">
                 ${skills.map(skill => `
                   <div class="skill-item">
-                    <span>${skill.name}</span>
+                    <span>${skill}</span>
                   </div>
                 `).join('')}
               </div>

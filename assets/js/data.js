@@ -9,7 +9,7 @@ const data = {
      Passionate about solving real-world problems, I strive to build clean, testable, and impactful AI solutions.`
   },
   about: {
-    image: "assets/images/profile.png",
+    image: "assets/images/profile.jpg",
     introduction: `I am a Machine Learning Engineer and Python Developer with practical experience in developing AI-powered applications,
      scalable backend systems, and end-to-end machine learning solutions. My expertise includes fine-tuning deep learning 
      and transformer-based models, building RESTful APIs using FastAPI, Flask, and Django, and deploying cloud-native solutions on AWS.

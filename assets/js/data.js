@@ -1,20 +1,12 @@
 const data = {
   profile: {
     name: "Amirali Sahraei",
-    title: "Machine Learning Engineer | Python Developer",
-    bio: `I am a Machine Learning Engineer and Python Developer with practical experience in developing AI-powered applications,
-     scalable backend systems, and end-to-end machine learning solutions. My expertise includes fine-tuning deep learning 
-     and transformer-based models, building RESTful APIs using FastAPI, Flask, and Django, and deploying cloud-native solutions on AWS.
-     I’m proficient with tools like Python, PyTorch, Hugging Face, LangChain, Docker, and Git, and experienced in MLOps and CI/CD workflows. 
-     Passionate about solving real-world problems, I strive to build clean, testable, and impactful AI solutions.`
+    title: "AI/ML & Automation Engineer | Python Developer",
+    bio: `Python Developer & Machine Learning Engineer (AI & Automation) with 2+ years of hands-on experience in building scalable backend systems, CI/CD pipelines, and infrastructure automation across AWS and Azure cloud platforms. Proven expertise in Python development, containerization with Docker, and deploying multi-cloud solutions. Skilled in developing automated workflows, API integrations, and monitoring systems using AWS and Azure services. Experienced with Linux administration, version control (Git), and Agile methodologies. Passionate about streamlining development processes and implementing robust, enterprise-grade automation and AI-driven solutions.`
   },
   about: {
     image: "assets/images/profile.jpg",
-    introduction: `I am a Machine Learning Engineer and Python Developer with practical experience in developing AI-powered applications,
-     scalable backend systems, and end-to-end machine learning solutions. My expertise includes fine-tuning deep learning 
-     and transformer-based models, building RESTful APIs using FastAPI, Flask, and Django, and deploying cloud-native solutions on AWS.
-     I’m proficient with tools like Python, PyTorch, Hugging Face, LangChain, Docker, and Git, and experienced in MLOps and CI/CD workflows. 
-     Passionate about solving real-world problems, I strive to build clean, testable, and impactful AI solutions.`,
+    introduction: `I am a Python Developer & Machine Learning Engineer with 2+ years of hands-on experience in developing AI-powered applications, scalable backend systems, and infrastructure automation across AWS and Azure. Skilled in fine-tuning deep learning and transformer-based models, building RESTful APIs with FastAPI, Flask, and Django, and deploying containerized solutions using Docker and Kubernetes. Proficient in Python, PyTorch, Hugging Face, LangChain, and experienced in CI/CD, MLOps workflows, and cloud-native development. Passionate about streamlining processes and delivering clean, testable, and production-ready AI and automation solutions.`,
     expertise: [
       {
         icon: "brain",
@@ -39,10 +31,7 @@ const data = {
       degree: "Master of International Business",
       institution: "İstanbul Nişantaşı Üniversitesi",
       gpa: "80/100",
-      description: `Completed one semester of Master's-level coursework with high performance in an international academic environment.
-       This experience broadened my perspective and deepened my understanding of how technology, innovation, and business systems intersect. 
-       Courses included Management Information Systems, Turkish and World Economy, Quality Management Systems, Innovation Management, 
-       and Scientific Research Methods complementing my technical background in AI and software development.`
+      description: `Completed one semester of Master's-level coursework with high performance in an international academic environment. This experience broadened my perspective and deepened my understanding of how technology, innovation, and business systems intersect. Courses included Management Information Systems, Turkish and World Economy, Quality Management Systems, Innovation Management, and Scientific Research Methods complementing my technical background in AI and software development.`
     },
     {
       period: "2019 - 2023",
@@ -65,26 +54,23 @@ const data = {
       title: "Python Developer",
       company: "Startup Studio OCTA",
       responsibilities: [
-        `During my time at OCTA, I focused on backend development, leveraging Python and Flask 
-        to solve integration challenges and optimize system performance. One of my key achievements 
-        was integrating a PHP platform with backend systems by developing a seamless API bridge 
-        using Flask, ensuring efficient communication between different technologies. I was 
-        responsible for building scalable, maintainable backend solutions, which significantly 
-        improved system reliability. In addition to this, I collaborated within an Agile team, 
-        adhering to best practices in Git, CI/CD, and maintaining high standards of code quality 
-        and documentation. I also developed reusable Python components that enhanced the modularity 
-        and scalability of the system, streamlining future development efforts.`
+        `Developed scalable backend solutions using Python and Flask, enhancing system reliability and maintainability. Designed and implemented a Flask-based API bridge to integrate a PHP platform with backend systems, enabling seamless communication with smart contracts. Deployed applications using Docker and Kubernetes (EKS/AKS), optimizing container resource usage for better performance. Collaborated in Agile teams, leveraging Git, CI/CD pipelines, and clean code principles to deliver production-ready, modular Python components.`
       ]
     }
   ],
   projects: [
     {
+      id: 7,
+      title: "Automated RAG and LLM Fine-Tuning",
+      description: `End-to-end pipeline for automated fine-tuning and deployment of LLMs with Retrieval-Augmented Generation (RAG), using AWS SageMaker, FastAPI, and Kubernetes (EKS). Enables seamless model training, scalable deployment, and serving of a context-aware chatbot via RESTful API. CI/CD workflow automates training, containerization, and rollout. Features secure secrets management, multi-cloud infrastructure automation, and is designed for enterprise-grade use cases.`,
+      technologies: ["AWS", "Azure", "FastAPI", "Kubernetes", "LLMs", "RAG", "CI/CD", "Docker", "Github Actions"],
+      icon: "cloud",
+      url: "https://github.com/amiralisahraei/intelligent-rag-service"
+    },
+    {
       id: 4,
       title: "Gmail Categorization App Powered by LLMs",
-      description: `A Django-based web application that fetches, analyzes, and intelligently 
-      categorizes Gmail messages using Large Language Models (LLMs) for deeper contextual 
-      sentiment understanding. This AI-driven app offers a modern interface to explore and 
-      filter your inbox based on nuanced sentiment categories.`,
+      description: `Django-based web application that fetches, analyzes, and categorizes Gmail messages using LLMs for contextual sentiment understanding. Offers a modern interface to explore and filter inbox based on nuanced sentiment categories.`,
       technologies: ["Django", "LLMS"],
       icon: "envelope",
       url: "https://github.com/amiralisahraei/django-llm-mail"
@@ -92,8 +78,7 @@ const data = {
     {
       id: 1,
       title: "LLM Fine-Tuning with LoRA for GPT-2",
-      description: `Implemented parameter-efficient fine-tuning using Low-Rank Adaptation for 
-      GPT-2 models, achieving improved performance with reduced computational resources.`,
+      description: `Implemented parameter-efficient fine-tuning using Low-Rank Adaptation for GPT-2 models, achieving improved performance with reduced computational resources.`,
       technologies: ["PyTorch", "HuggingFace", "LoRA"],
       icon: "robot",
       url: "https://github.com/amiralisahraei/gpt2-qa-finetuning"
@@ -101,8 +86,7 @@ const data = {
     {
       id: 2,
       title: "Agents-Based RAG System with LLM",
-      description: `Developed a Retrieval-Augmented Generation system integrating Tavily Search 
-      API to enhance LLM responses with real-time information retrieval.`,
+      description: `Developed a Retrieval-Augmented Generation system integrating Tavily Search API to enhance LLM responses with real-time information retrieval.`,
       technologies: ["LangChain", "LLMs", "Tavily"],
       icon: "search",
       url: "https://github.com/amiralisahraei/agent-rag-llm"
@@ -110,8 +94,7 @@ const data = {
     {
       id: 3,
       title: "Lung CT Image Classification",
-      description: `FastAPI-based application for classifying lung CT scans using convolutional 
-      neural networks, achieving 94% accuracy on test dataset.`,
+      description: `FastAPI-based application for classifying lung CT scans using convolutional neural networks, achieving 94% accuracy on test dataset.`,
       technologies: ["FastAPI", "CNN", "Medical Imaging"],
       icon: "lungs",
       url: "https://github.com/amiralisahraei/lung-cancer-classification"
@@ -119,8 +102,7 @@ const data = {
     {
       id: 5,
       title: "Object Detection (YOLO_V8)",
-      description: `Real-time object detection system using YOLOv8 for identifying and classifying 
-      objects in images and video streams.`,
+      description: `Real-time object detection system using YOLOv8 for identifying and classifying objects in images and video streams.`,
       technologies: ["YOLOv8", "Computer Vision", "OpenCV"],
       icon: "eye",
       url: "https://github.com/amiralisahraei/vision/tree/master/YOLO_V8"
@@ -128,44 +110,56 @@ const data = {
     {
       id: 6,
       title: "Image Stitching & Registration",
-      description: `Panoramic image stitching and medical image registration system using feature 
-      detection and homography estimation.`,
+      description: `Panoramic image stitching and medical image registration system using feature detection and homography estimation.`,
       technologies: ["OpenCV", "Image Processing", "Computer Vision"],
       icon: "image",
       url: "https://github.com/amiralisahraei/opencv"
     }
   ],
   skills: {
-    "Machine Learning & Deep Learning": [
-      "PyTorch", "TensorFlow", "Keras", "Scikit-Learn", "OpenCV", "CNNs", "Object Detection",
-      "Transfer Learning", "Model Training & Evaluation", "Hyperparameter Tuning", 
-      "Cross-Validation", "Feature Engineering", "ROC-AUC", "F1-Score", "Confusion Matrix"
-    ],
-    "NLP & LLMs": [
-      "LangChain", "Hugging Face", "GPT-2/3.5/4", "Prompt Engineering", "LoRA Fine-tuning", 
-      "RAG", "NER", "Sentiment Analysis", "Text Classification", "Tokenization"
-    ],
-    "MLOps & Model Deployment": [
-      "Docker", "Apache Airflow", "AWS (EC2, S3, Lambda, API Gateway)", "FastAPI", "Flask", 
-      "Django", "Model Deployment", "Monitoring", "Drift Detection", "ML Pipelines"
-    ],
-    "CI/CD": ["Git", "Jenkins", "GitHub Actions", "Automated Pipelines"],
-    "Data Science & Analytics": [
-      "Pandas", "NumPy", "Matplotlib", "Seaborn", "SQL (PostgreSQL, MySQL)", "MongoDB", 
-      "Data Cleaning", "EDA", "Statistical Analysis", "Time Series Forecasting", 
-      "Anomaly Detection"
-    ],
-    "Software Development & Tools": [
-      "Python", "Jupyter Notebook", "Google Colab", "Ubuntu/Linux", "Streamlit", "REST APIs", 
-      "Agile", "Version Control (Git)", "Unit Testing", "Code Review", "Technical Documentation"
-    ]
+  "Machine Learning & Deep Learning": [
+    "PyTorch", "TensorFlow", "Keras", "Scikit-learn", "OpenCV", "CNNs", "Object Detection",
+    "Transfer Learning", "Model Training & Evaluation", "Hyperparameter Tuning", 
+    "Cross-Validation", "Feature Engineering", "ROC-AUC", "F1-Score", "Confusion Matrix"
+  ],
+  "NLP & LLMs": [
+    "LangChain", "Hugging Face", "GPT-2/3.5/4", "Prompt Engineering", "LoRA Fine-tuning", 
+    "RAG", "NER", "Sentiment Analysis", "Text Classification", "Tokenization"
+  ],
+  "MLOps & Model Deployment": [
+    "SageMaker", "Azure ML", "Docker", "Kubernetes (EKS, AKS)", "Helm (basic)", 
+    "Apache Airflow", "Model Deployment", "Monitoring", "Drift Detection", 
+    "Automated Retraining", "ML Pipelines", "A/B Testing"
+  ],
+  "Cloud & Infrastructure": [
+    "AWS (EC2, S3, Lambda, API Gateway, CloudWatch, IAM, VPC, Step Functions, SageMaker Pipelines)",
+    "Azure (VMs, Storage Accounts, API Management, Azure ML, Functions, Logic Apps, Event Grid)",
+    "Linux/Ubuntu Administration", "VM Management", "Network Configuration"
+  ],
+  "CI/CD & DevOps": [
+    "Git", "GitHub Actions", "Jenkins", "CI/CD Pipelines", "Ansible", 
+    "Infrastructure as Code", "Configuration Management", "Workflow Automation", 
+    "n8n Automation Platform"
+  ],
+  "Data Science & Analytics": [
+    "Pandas", "NumPy", "SQL (PostgreSQL, MySQL)", "MongoDB", "Statistical Analysis", 
+    "Data Cleaning", "EDA", "Time Series Forecasting", "Anomaly Detection"
+  ],
+  "Software Engineering & APIs": [
+    "Python (Advanced)", "Flask", "FastAPI", "Django", "REST APIs", 
+    "Microservices", "Serverless Architectures", "Third-Party Integrations",
+    "Selenium", "JavaScript"
+  ],
+  "Tools & Development Practices": [
+    "Jupyter Notebook", "Google Colab", "Streamlit", "Version Control (Git)", 
+    "Unit Testing", "Automated Testing Frameworks", "Agile Methodologies", 
+    "Code Review", "Technical Documentation"
+  ]
   },
   achievements: [
     {
       title: "Top 38% Ranking in Kaggle Competition: Binary Prediction with a Rainfall Dataset (2025)",
-      description: `Ranked 1626th out of 4381 participants, applying ensemble models such as XGBoost, LightGBM, and RandomForest.
-                    Focused on feature engineering and model optimization to enhance prediction accuracy, achieving a high Area Under the
-                    ROC Curve (AUC) in a binary classification task.`
+      description: `Ranked 1626th out of 4381 participants, applying ensemble models such as XGBoost, LightGBM, and RandomForest. Focused on feature engineering and model optimization to enhance prediction accuracy, achieving a high Area Under the ROC Curve (AUC) in a binary classification task.`
     }
   ],
   certificates: [
